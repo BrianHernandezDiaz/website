@@ -1,0 +1,779 @@
+/* Estilos globales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+}
+
+p{
+    color: black;
+
+
+}
+
+/* Estilos del header */
+
+header{ 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;   
+    margin: 0rem 0rem; 
+    margin-bottom: 2rem;
+    border-bottom: rgb(88, 88, 223) solid 4px ;
+    padding: 0rem 3rem;
+    position:sticky; 
+    top:0rem;
+    padding: 1rem;
+    background-color: white;    
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    
+    
+
+    
+}
+
+header nav ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.whatsapp {
+    width: 60px;
+    position: fixed;
+    right: 2rem;
+    bottom:50%;
+    display: none;
+}
+
+
+
+
+.logo1{
+    width: 10rem;
+    height: auto;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    justify-content:space-evenly;    
+}
+
+header li{
+    padding: 1rem;
+    color: #242E52;
+
+}
+
+
+
+.whatsapp1 {
+    width: 15px;    
+    right: 0rem;
+    align-content: center;
+    
+}
+
+
+
+button {
+    padding: 1rem 2rem ;
+    background: rgb(88, 88, 223);
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    color: white;
+    justify-content: center;
+}
+.button1 {
+    
+    padding: 0.5rem 0.5rem ;
+    background: #29A210;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    color: white;
+    justify-content: center;
+    justify-content: space-between; 
+    text-decoration: none; 
+}
+
+#languageButton {
+    padding: 0.5rem 1rem;
+    background: rgb(88, 88, 223);
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.section1, .section4, .section6 {
+    display: flex;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    justify-content: space-evenly;           
+}
+
+.section3 article{
+    border: rgb(88, 88, 223) solid 1px;
+    border-radius: 50px;
+    margin: 0.5rem;
+    
+}
+
+.raqueta{   
+  
+    width: 35vw;
+    background-size: cover;    
+
+    opacity: 1; /* Establecer la opacidad inicial */
+    transition: opacity 4s ease; /* Agregar una transición suave */
+    object-fit: contain;
+    margin-bottom: 5rem;
+    border-radius: 10px;
+    border: 2px solid rgb(88, 88, 223);
+    border-style: inset;
+
+
+}
+
+.section4{
+    background-color:rgb(88, 88, 223) ;
+}
+
+.article2 {
+    margin: 5rem; 
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-evenly;
+   align-items: flex-end;   
+
+}
+
+
+
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+.article2 button {
+    display: block;
+    padding: 1rem 2rem;
+    background: rgb(88, 88, 223);
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    color: white;
+    margin-top: 1rem;
+}
+
+.section2, .section7{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background:rgb(88, 88, 223);
+    padding: 1rem 2rem;
+    
+
+}
+
+.article3, .section7 article {
+    font-size: 2rem;
+    color: white;
+    width: 28rem;
+}
+
+
+
+
+.article4{
+    font-size: 1rem;
+    color: white;
+    width: 28rem;
+}
+
+.section3{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: space-evenly;
+    background-color:#FAFAFA ;
+}
+
+.section3 article{
+    width: 28rem;
+    display: flex;
+    flex-direction: column;    
+}
+
+.section3 article div {
+
+    display: flex;
+    align-items: center;
+}
+
+.section3 article h2 {
+
+margin-left: 1rem;
+
+}
+
+.section3 article p {
+ margin-left: 8rem;
+}
+
+.section3 article div button {
+    padding: 1rem 2rem ;    
+}
+
+.section4 h2 {
+    font-size: 2rem;
+    padding: 2rem;
+    color: white;
+}
+
+.section5{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color:white ;
+    }
+
+.section5 article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    border:rgb(88, 88, 223) solid 1px;  
+    border-radius: 50px;  
+    margin: 1rem;
+
+}
+
+.section5 article img, 
+.section5 article h3, 
+.section5 article p {
+
+    margin: 1rem;    
+}
+
+.section5 img {
+    width: 40px;
+    border: #1E1E26;
+}
+
+.section6{
+    padding:2rem;
+    }
+
+.section6 button{
+    margin-bottom: 5rem;
+}
+
+
+ .section7 button {
+        display: block;
+        padding: 1rem 2rem;
+        background:#FFFFFF;
+        box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        color:rgb(88, 88, 223);
+        margin-top: 2rem;
+        height: 80px;
+   
+    }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#24261e ;
+    padding: 2rem;
+    color:#FAFAFA;  
+
+    
+}
+.footera ul li{
+    margin: 0.8rem;
+    padding: 0;
+} 
+
+
+.footera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:flex-start;   
+    
+}
+
+.articlea{
+    width:30%;
+    
+}
+
+.footerb{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.nav1, .containerbutton2 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    
+}
+
+.iconos li{
+    padding: 2rem 1rem;
+}
+
+footer p {
+    color: white;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+footer ul {
+    list-style-type: none;
+    
+  }
+
+.iconos{
+    display: flex;
+    justify-content:flex-start ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pfinal{
+    display: none;
+}
+
+button, header li, footer li header nav ul a  {
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: rgb(105, 107, 241);
+}
+
+input:focus{
+    color: blue;
+    background-color: rgb(250, 233, 201);
+
+}
+
+header nav ul li a:hover {
+    color: rgb(93, 88, 229);
+}
+
+
+.eje{
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.elform{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    
+  }
+
+  .elform input{
+    height: 2rem;
+    border-radius:50px ;
+  }
+  
+  .elform  div {
+    margin-bottom: 1rem;
+  }
+  
+  .elform label {        
+    
+    color: white;
+
+  }
+
+  .nameform{
+    margin-top: 3rem;
+  }
+
+  .divformbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .formbutton {
+    padding: 2rem 1rem;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color: rgb(93, 88, 229);
+    
+       
+  }
+
+  textarea{
+    border-radius: 0px;
+    height: 4rem;
+
+  }
+
+  .number::before{
+    content: "";
+    display: inline-block;
+    width: 1.5rem; /* Adjust the width of the image */
+    height: 1.5rem; /* Adjust the height of the image */
+    background-image: url('../img/tel.png'); /* Set the path to your image */
+    background-size: cover;
+    background-position: center;
+    margin-left: 5px;
+    align-items: center;
+  }
+
+  .place::before{
+    content: "";
+    display: inline-block;
+    width: 1.5rem; /* Adjust the width of the image */
+    height: 1.5rem; /* Adjust the height of the image */
+    background-image: url('../img/ubicacion.png'); /* Set the path to your image */
+    background-size: cover;
+    background-position: center;
+    margin-left: 5px;
+    align-items: center;
+  }
+
+  .email::before{
+    content: "";
+    display: inline-block;
+    width: 1.5rem; /* Adjust the width of the image */
+    height: 1.5rem; /* Adjust the height of the image */
+    background-image: url('../img/email.png'); /* Set the path to your image */
+    background-size: cover;
+    background-position: center;
+    margin-left: 5px;
+    align-items: center;
+  }
+
+
+
+
+
+
+/* Estilos mobile */
+
+
+@media (max-width: 650px) {
+    
+     
+
+    header ul {
+        display: none;
+    }
+
+
+
+    header {
+        margin-top: 2rem;
+        margin-left: 2rem;
+        margin-right: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    .section1{
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px; 
+        background-color: white;
+        justify-content: center;     
+    }
+
+    .article1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+        
+             
+    }
+    .raqueta{
+        width: 350px;
+        align-content: center;
+        height: auto;
+        justify-self:flex-end;
+        
+        
+    }
+
+    .article2 {
+        margin: 0;
+        padding: 0;
+        margin-right: 2rem;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+    
+    }
+
+    .section1{
+        padding: 0;
+        margin: 0;
+    }
+
+    .section1 h1{
+        padding:0;
+        margin: 0;
+        margin-bottom: 2rem;
+       
+       
+    }
+
+    .article2 h2 {
+        margin-left: 2rem;
+    }
+
+    .section2 {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color:rgb(93, 88, 229);
+        margin: 0;
+        padding: 0; 
+        margin-bottom: 3rem;           
+        
+    }
+
+
+
+
+    .section3{
+
+        margin: 0;
+        margin-top: 2rem;
+        padding: 0; 
+
+    }
+
+    .section3 article {
+        margin-left: 1rem;
+    }
+
+    .section4 h2{
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+    .section5{
+
+        padding: 0;
+    }
+
+    .lebron {
+        padding: 0rem;
+        margin: 0;
+
+    }
+
+
+    
+    .article3 {
+        margin-right: 0rem;
+        padding: 2rem;
+        padding-right: 6rem;
+        color: white;
+
+    }
+
+    .article4{
+        margin-right: 0rem;
+        padding: 2rem;
+        padding-right: 3rem;
+        
+
+    }
+
+    .section3 div{
+
+        background: rgba(white);
+        border-radius: 50px 0px 0px 50px;
+
+    }
+
+
+
+    .section3 article h2 {
+
+        margin-left: 1rem;
+
+
+        
+    }
+        
+    .section3 article p {
+        margin-left: 0rem;
+        margin:1.5rem;
+    }
+
+  
+    
+
+    .section5 {
+        display: flex;
+        flex-direction: column;
+    }
+    .section4, .section6 {
+        
+        padding-left: 2rem;
+        padding-right: 2rem;
+        justify-content: space-evenly;       
+    }
+
+    .section4 h2{
+        color: white;
+    }
+
+    .section6 button {
+        margin: 0;
+    }
+
+
+    .article5{
+        padding-left: 4rem;
+        padding-right: 4rem;
+        height: 5rem;
+        align-content: center;
+        align-items: center;
+    }
+
+    .section7{
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(93, 88, 229);
+    margin: 0;
+    padding: 2rem;
+     } 
+     
+     
+     .section7 button{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        background-color:#232C50 ;
+        color:#FFFFFF;
+        margin:0;
+        padding: 0;
+
+     }
+
+     footer{
+    
+        display: flex;
+        
+     }
+
+     #descriptionunison, #services, .iconos, .nav1{
+
+        display: none;
+
+     }
+
+     .articlea{
+        width: 100%;
+     }
+
+
+
+    
+
+
+    
+}
+
+     .process{
+        display: flex;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-bottom: 3rem;
+        width: 100vw;
+        justify-content: space-evenly;     
+    
+     }
+
+     .imgprocess{
+        width: 100vw;
+     }
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
