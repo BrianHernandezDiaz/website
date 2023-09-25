@@ -27,35 +27,51 @@ function toggleLanguage() {
   // Obtiene el nombre de la página actual (por ejemplo, "index.html")
   var currentPageName = window.location.pathname.split("/").pop();
 
-  // Reemplaza la extensión ".html" con "-es.html" para obtener el nombre de la página en español
-  var newPageName = currentPageName.replace(".html", "-es.html");
+  // Verifica si ya estamos en la versión en inglés (".html")
+  if (currentPageName.endsWith("-es.html")) {
+    // Si ya estamos en la versión en español, cambia a la versión en inglés
+    var newPageName = currentPageName.replace("-es.html", ".html");
+  } else {
+    // Si estamos en la versión en español o cualquier otra, cambia a la versión en inglés
+    var newPageName = currentPageName.replace(".html", "-es.html");
+  }
 
-  // Construye la nueva URL
-  var newURL = window.location.origin + "/" + newPageName;
+  // Construye la nueva URL con la carpeta "website"
+  var newURL = window.location.origin + "/website/" + newPageName;
 
   // Cambia la ubicación a la página traducida
   window.location.href = newURL;
 
-  // Cambia el texto del botón a "Español"
-  document.getElementById("languageButton").textContent = "Español";
-
+  // Cambia el texto del botón a "English" o "Español" según corresponda
+  document.getElementById("languageButton").textContent =
+    currentPageName.endsWith("-es.html") ? "English" : "Español";
 }
+
 
 function revtoggleLanguage() {
   // Obtiene el nombre de la página actual (por ejemplo, "index.html")
   var currentPageName = window.location.pathname.split("/").pop();
 
-  // Reemplaza la extensión ".html" con "-es.html" para obtener el nombre de la página en español
-  var newPageName = currentPageName.replace("-es.html", ".html");
+  // Verifica si ya estamos en la versión en español ("-es.html")
+  if (currentPageName.endsWith("-es.html")) {
+    // Si ya estamos en la versión en español, cambia a la versión en inglés
+    var newPageName = currentPageName.replace("-es.html", ".html");
+  } else {
+    // Si estamos en la versión en inglés o cualquier otra, cambia a la versión en español
+    var newPageName = currentPageName.replace(".html", "-es.html");
+  }
 
-  // Construye la nueva URL
-  var newURL = window.location.origin + "/" + newPageName;
+  // Construye la nueva URL con la carpeta "website"
+  var newURL = window.location.origin + "/website/" + newPageName;
 
   // Cambia la ubicación a la página traducida
   window.location.href = newURL;
 
-  // Cambia el texto del botón a "Español"
-  document.getElementById("languageButton").textContent = "Español";
+  // Cambia el texto del botón a "Español" o "English" según corresponda
+  document.getElementById("languageButton").textContent =
+    currentPageName.endsWith("-es.html") ? "English" : "Español";
+}
+
 }
 
 
